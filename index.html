@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCarry - Premium Transport Services</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#hero"><img src="assets/WecarryLogoH.svg" alt="WeCarry Logo" > </a>
+            </div>
+            <ul class="desktop-nav">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20a%20ride.">Contact</a></li>
+            </ul>
+            <button class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="mobile-nav">
+            <button class="close-menu">&times;</button>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20a%20ride.">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Experience Luxury & Comfort</h1>
+                <p>Your journey, our passion. Premium transport for every occasion.</p>
+                <a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20a%20ride." class="cta-button">Book Now</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20a%20City%20or%20Airport%20Transfer." class="card-link">
+                        <img src="assets/service1.png" alt="Airport Transfer">
+                        <div class="card-content">
+                            <h3>City & Airport Transfers</h3>
+                            <p>Reliable and punctual transfers to and from all major airports and train stations in Paris. Travel in comfort.</p>
+                            <span class="cta-button">Book This Service</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20a%20trip%20to%20Disneyland%20Paris." class="card-link">
+                        <img src="assets/service2.png" alt="Paris Disney">
+                        <div class="card-content">
+                            <h3>Paris Disney Trips</h3>
+                            <p>Make your magical trip to Disneyland Paris even more special with our dedicated transport service.</p>
+                            <span class="cta-button">Book This Service</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20your%20Disposal%20Service." class="card-link">
+                        <img src="assets/service3.png" alt="Disposal Service">
+                        <div class="card-content">
+                            <h3>Disposal Service</h3>
+                            <p>Have a driver at your disposal for a minimum of 6 hours. Perfect for business meetings or sightseeing.</p>
+                            <span class="cta-button">Book This Service</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <div class="pricing-container-desktop">
+                <img src="assets/cars.png" alt="WeCarry Cars" class="pricing-cars">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Class E (Business)</th>
+                            <th>Class V (Business XL)</th>
+                            <th>Class S (First)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>City Transfer (Paris, Train Station)</td>
+                            <td>90€</td>
+                            <td>100€</td>
+                            <td>150€</td>
+                        </tr>
+                        <tr>
+                            <td>Airport Transfer (ORY, LBG, CDG)</td>
+                            <td>130€</td>
+                            <td>150€</td>
+                            <td>230€</td>
+                        </tr>
+                        <tr>
+                            <td>Paris Disney</td>
+                            <td>150€</td>
+                            <td>180€</td>
+                            <td>260€</td>
+                        </tr>
+                        <tr>
+                            <td>Disposal Service (6h minimum, price per hour)</td>
+                            <td>90€/h</td>
+                            <td>90€/h</td>
+                            <td>150€/h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-container-mobile">
+                <div class="pricing-tabs">
+                    <button class="active" data-target="table-e">Class E</button>
+                    <button data-target="table-v">Class V</button>
+                    <button data-target="table-s">Class S</button>
+                </div>
+                <div class="pricing-table-container">
+                    <table id="table-e">
+                        <tbody>
+                            <tr><td data-label="Service">City Transfer</td><td data-label="Price">90€</td></tr>
+                            <tr><td data-label="Service">Airport Transfer</td><td data-label="Price">130€</td></tr>
+                            <tr><td data-label="Service">Paris Disney</td><td data-label="Price">150€</td></tr>
+                            <tr><td data-label="Service">Disposal Service</td><td data-label="Price">90€/h</td></tr>
+                        </tbody>
+                    </table>
+                    <table id="table-v" style="display: none;">
+                        <tbody>
+                            <tr><td data-label="Service">City Transfer</td><td data-label="Price">100€</td></tr>
+                            <tr><td data-label="Service">Airport Transfer</td><td data-label="Price">150€</td></tr>
+                            <tr><td data-label="Service">Paris Disney</td><td data-label="Price">180€</td></tr>
+                            <tr><td data-label="Service">Disposal Service</td><td data-label="Price">90€/h</td></tr>
+                        </tbody>
+                    </table>
+                    <table id="table-s" style="display: none;">
+                        <tbody>
+                            <tr><td data-label="Service">City Transfer</td><td data-label="Price">150€</td></tr>
+                            <tr><td data-label="Service">Airport Transfer</td><td data-label="Price">230€</td></tr>
+                            <tr><td data-label="Service">Paris Disney</td><td data-label="Price">260€</td></tr>
+                            <tr><td data-label="Service">Disposal Service</td><td data-label="Price">150€/h</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="vat-note">Note: All prices are VAT inclusive.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Contact us to book your ride!</p>
+        <a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20a%20ride." class="cta-button">Book via WhatsApp</a>
+    </footer>
+
+    <a href="https://wa.me/33788407998?text=Hello%20WeCarry%2C%20I'd%20like%20to%20book%20a%20ride." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
